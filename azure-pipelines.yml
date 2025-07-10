@@ -35,6 +35,11 @@ steps:
     provider: 'azurerm'
     command: 'init'
     backendServiceArm: 'DataCouch (d52a6d4f-8a6b-4e23-a011-dbb0c8d7eddc)'
+    backendAzureRmResourceGroupName: 'my-rg-vs'
+    backendAzureRmStorageAccountName: 'mytfstateacctvs'
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'terraform.tfstate'
+
 
 - task: TerraformTask@5
   inputs:
